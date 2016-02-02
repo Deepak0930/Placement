@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Hey guys! This android app lets you place the basketball in the hoop and you get awarded if you do it! This is my 14th app in my 'Make an App Everyday Journey'"
+        android:text="Hey guys! This android app lets you place the basketball in the hoop and you get awarded if you do it! This is my 14th app in my 'Make an App Everyday Journey'!"
         android:gravity="center"
         android:fontFamily="sans-serif-medium"
         android:textStyle="bold"

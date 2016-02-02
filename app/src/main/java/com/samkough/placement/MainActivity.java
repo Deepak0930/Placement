@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 {
     private Button aboutB;
     private ImageView ball, hoop;
-    private TextView cText;
+    private TextView cText, sText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -45,11 +45,13 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         hoop.setOnTouchListener(this);
 
         cText = (TextView) findViewById(R.id.change);
+        sText = (TextView) findViewById(R.id.score);
     }
 
     float x, y = 0.0f;
     boolean moving = false;
     String TAG = "tag";
+    int i = 0;
 
     @Override
     public boolean onTouch(View v, MotionEvent event)
@@ -73,6 +75,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
                         // Toast can't update for some reason so I'm not using it
                         // Toast.makeText(this, "INTERSECTED!", Toast.LENGTH_SHORT).show();
                         cText.setText("INTERSECTED!");
+                        sText.setText("" + i);
                     }
                     else
                     {
